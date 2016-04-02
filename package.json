@@ -1,0 +1,15 @@
+{
+  "name": "herman-bot",
+  "version": "1.0.0",
+  "description": "Simple interactive bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Pavel Polivka",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^0.6.4",
+    "restify": "^4.0.4"
+  }
+}
