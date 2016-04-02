@@ -1,11 +1,10 @@
 var restify = require('restify');
 var builder = require('botbuilder');
+var index = require('./dialogs/index')
 
 // Create bot and add dialogs
 var bot = new builder.BotConnectorBot({ appId: 'herman', appSecret: '06169e1819804c3496e099a5d590c4a7' });
-bot.add('/', function (session) {
-  session.send('Hello World');
-});
+bot.add('/', index);
 
 // Setup Restify Server
 var server = restify.createServer();
